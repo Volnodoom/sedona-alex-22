@@ -92,7 +92,7 @@
       <section class="hotel-search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="button initialize-modal-form" href="javascript:undefined">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <a class="button button-initialization" href="javascript:undefined">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
       <div class="map">
         <h2 class="visually-hidden">Map</h2>
@@ -132,30 +132,30 @@
 
       <section class="modal-form">
         <h2 class="visually-hidden">Check available appartments</h2>
-        <form class="modal-form appartments" action="https://echo.htmlacademy.ru" method="get">
-          <p class="appartments__item">
-            <label class="appartments__item-date" for="checkin-date">Дата заезда:</label>
-            <input class="appartments__item-date calendar-icon" type="text" name="checkin" id="checkin-date" placeholder="24 апреля 2017">  
+        <form class="modal-form appartment" action="https://echo.htmlacademy.ru" method="get">
+          <p class="appartment__item">
+            <label class="appartment__item-date" for="checkin-date">Дата заезда:</label>
+            <input class="appartment__item-date calendar-icon" type="text" name="checkin" id="checkin-date" placeholder="24 апреля 2017">  
           </p>
-          <p class="appartments__item">
-            <label class="appartments__item-date" for="checkout-date">Дата выезда:</label>
-            <input class="appartments__item-date calendar-icon" type="text" name="checkout" id="checkout-date" placeholder="4 июля 2017">
+          <p class="appartment__item">
+            <label class="appartment__item-date" for="checkout-date">Дата выезда:</label>
+            <input class="appartment__item-date calendar-icon" type="text" name="checkout" id="checkout-date" placeholder="4 июля 2017">
           </p>
-          <ul  class="appartments__list">
-            <li class="appartments__item count-participants">
+          <ul  class="appartment__list">
+            <li class="appartment__item count-participants">
               <label class="count-participants__adult" for="adult-number">Взрослые:</label>
               <span class="button-transperent">-</span>
               <input class="count-participants__adult" type="number" name="adult-number" id="adult-number" value="2" min="0">
               <span class="button-transperent">+</span>
             </li>
-            <li class="appartments__item count-participants">
+            <li class="appartment__item count-participants">
               <label class="count-participants__children" for="children-number ">Дети:</label>
               <span class="button-transperent">-</span>
               <input class="count-participants__children" type="number" name="children-number" id="children-number" value="0" min="0">
               <span class="button-transperent">+</span>
             </li>
           </ul>
-          <button class="button search" type="submit">Найти</button>
+          <button class="button button-search" type="submit">Найти</button>
         </form>
       </section>
 
