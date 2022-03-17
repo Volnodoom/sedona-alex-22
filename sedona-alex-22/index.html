@@ -13,19 +13,19 @@
       <a class="header-logo">
         <img src="img/content/logo.svg" width="138" height="70" alt="Booking server Sedona."> 
       </a>
-      <nav>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a href="blank.html">Информация</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="blank.html">Информация</a>
           </li>
-          <li class="navigation-item">
-            <a href="blank.html">Фото и видео</a>
+          <li class="nav__item">
+            <a class="nav__link" href="blank.html">Фото и видео</a>
           </li>
-          <li class="navigation-item">
-            <a href="blank.html">Карта Штата</a>
+          <li class="nav__item">
+            <a class="nav__link" href="blank.html">Карта Штата</a>
           </li>
-          <li class="navigation-item">
-            <a href="catalog.html">Гостиницы</a>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -33,7 +33,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Booking server Sedona</h1>
       <section class="about">
-        <div>
+        <div class="about__welcome">
           <img src="img/content/welcome.svg" width="457" height="351" alt="Welcome.">
         </div>
         <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -41,7 +41,7 @@
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Reasons why to visit Sedona</h2>
-        <ul class="advantages-list">
+        <ul class="advantages__list">
           <li class="advantages-item highlight">
             <h3>Настоящий  городок</h3>
             <p>— №1 —</p>
@@ -50,51 +50,51 @@
           </li>
         </ul>
         <ul>
-          <li class="advantages-item">
+          <li class="advantages__item">
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages__item">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages__item">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
-        <ul>
-          <li class="advantages-item highlight">
+        <ul class="advantages__list">
+          <li class="advantages__item highlight">
             <h3>Там есть Мост дьявола</h3>
             <img src="img/content/evil-bridge.jpg" width="800" height="256" alt="Rocks in a shape of bridge.">
             <p>— №2 —</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
         </ul>
-        <ul>
-          <li class="advantages-item">
+        <ul class="advantages__list shady">
+          <li class="advantages__item">
             <h3>Небольшая площадь</h3>
             <p>— №3 —</p>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages__item">
             <h3>Красивая дорога</h3>
             <p>— №4 —</p>
             <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages__item">
             <h3>Мало туристов</h3>
             <p>— №5 —</p>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </section>
-      <section class="ref-hotel-search">
+      <section class="hotel-search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a href="javascript:undefined">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <a class="button initialize-modal-form" href="javascript:undefined">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
-      <div>
+      <div class="map">
         <h2 class="visually-hidden">Map</h2>
         <img src="img/content/map.png" width="1199" height="594" alt="location of Cedona on the map.">
       </div>
@@ -102,64 +102,60 @@
 
     <footer class="page-footer">
       <h2>#visitSEDONA</h2>
-      <a href="tel:+74956611111">ТЕЛ: +7(495) 661-11-11</a>
-      <section>
+      <a class="page-footer__phone" href="tel:+74956611111">ТЕЛ: +7(495) 661-11-11</a>
+      <section class="page-footer__social">
         <h2 class="visually-hidden">Social platforms</h2>
-        <ul class="social-network-list">
-          <li class="social-network-item">
-            <a href="blank.html">
-            <span class="visually-hidden twiter">Twiter</span> 
+        <ul>
+          <li>
+            <a class="social-button" href="blank.html">
+            <span class="visually-hidden">Twitter</span> 
             </a>
           </li>
-          <li class="social-network-item">
-            <a href="blank.html">
-              <span class="visually-hidden facebook">Facebook</span> 
-            </a>
-          </li class="social-network-item">
           <li>
-            <a href="blank.html">
-              <span class="visually-hidden youtube">Youtube</span> 
+            <a class="social-button" href="blank.html">
+              <span class="visually-hidden">Facebook</span> 
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="blank.html">
+              <span class="visually-hidden">Youtube</span> 
             </a>
           </li>
         </ul>
       </section>
       <p>website by
-        <a href="blank.html">
+        <a class="cite-design" href="blank.html">
           <img src="img/content/logo-htmlacademy.svg" width="115" height="41" alt="htmlAcademy."> 
         </a>
       </p>
     </footer>
 
-      <section>
+      <section class="modal-form">
         <h2 class="visually-hidden">Check available appartments</h2>
-        <form class="appartments-availability" action="https://echo.htmlacademy.ru" method="get">
-          <p>
-            <label for="checkin-date">Дата заезда:</label>
-            <input type="text" name="checkin" id="checkin-date" placeholder="24 апреля 2017">
-            <img src="https://via.placeholder.com/21x23" alt="calendar"> 
+        <form class="modal-form appartments" action="https://echo.htmlacademy.ru" method="get">
+          <p class="appartments__item">
+            <label class="appartments__item-date" for="checkin-date">Дата заезда:</label>
+            <input class="appartments__item-date calendar-icon" type="text" name="checkin" id="checkin-date" placeholder="24 апреля 2017">  
           </p>
-          <p>
-            <label for="checkout-date">Дата выезда:</label>
-            <input type="text" name="checkout" id="checkout-date" placeholder="4 июля 2017">
-            <img src="https://via.placeholder.com/21x23" alt="calendar"> 
+          <p class="appartments__item">
+            <label class="appartments__item-date" for="checkout-date">Дата выезда:</label>
+            <input class="appartments__item-date calendar-icon" type="text" name="checkout" id="checkout-date" placeholder="4 июля 2017">
           </p>
-          <ul>
-            <li>
-              <label for="adult-number">Взрослые:</label>
-              <button type="button">-</button>
-              <input type="number" name="adult-number" id="adult-number" value="2" min="0">
-              <button type="button">+</button>
+          <ul  class="appartments__list">
+            <li class="appartments__item count-participants">
+              <label class="count-participants__adult" for="adult-number">Взрослые:</label>
+              <span class="button-transperent">-</span>
+              <input class="count-participants__adult" type="number" name="adult-number" id="adult-number" value="2" min="0">
+              <span class="button-transperent">+</span>
             </li>
-            <li>
-              <div>
-                <label for="children-number">Дети:</label>
-                <button type="button">-</button>
-                <input type="number" name="children-number" id="children-number" value="0" min="0">
-                <button type="button">+</button>
-              </div>
+            <li class="appartments__item count-participants">
+              <label class="count-participants__children" for="children-number ">Дети:</label>
+              <span class="button-transperent">-</span>
+              <input class="count-participants__children" type="number" name="children-number" id="children-number" value="0" min="0">
+              <span class="button-transperent">+</span>
             </li>
           </ul>
-          <button type="submit">Найти</button>
+          <button class="button search" type="submit">Найти</button>
         </form>
       </section>
 
