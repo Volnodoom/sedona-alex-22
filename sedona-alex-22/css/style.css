@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: 
+  url("/fonts/PTSans.woff2") format("woff2"), 
+  url("/fonts/PTSans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/PTSans-Bold.woff2"), url("/fonts/PTSans-Bold.woff");
+}
+
+:root {
+  --basic-white: #FFFFFF;
+  --basic-cloudy-blue: #81B3D2;
+  --basic-light-grey: #EEEEEE;
+  --basic-brown: #766357;
+  --basic-grey: #F2F2F2;
+  --basic-black: #333333;
+  --basic-black-true: #000;
+
+  --special-black-transparent: rgba(0, 0, 0, 0.3);
+  --special-white-transparent: rgba(255, 255, 255, 0.3);
+  --special-brown-hover: #604E43;
+  --special-brown-active: #503E33;
+  --special-blue-hover: #669EC0;
+  --special-blue-active: #5496BD;
+  --special-grey-border: #E5E5E5;
+  --special-grey-hover: #EBEBEB;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav__list {
+  list-style: none;
+}
+
+.nav__link {
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.nav__link:visited {
+  color: var(--basic-brown);
+}
+
+.nav__link:hover {
+  color: var(--basic-cloudy-blue);
+}
+
+.nav__link:active,
+.nav__item--current a {
+  color: var(--special-black-transparent);
+}
+
+.about__welcome img{
+  background-color: var(--basic-brown);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.about,
+.advantages,
+.hotel-search {
+  text-align: center;
+}
+
+.about__title {
+  line-height: 26px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.about__title ~ p {
+  line-height: 26px;
+}
+
+.advantages__list {
+  list-style: none;
+}
+
+.advantages__item h3{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.item-highlight {
+  background-color: var(--basic-cloudy-blue);
+}
+
+.item-highlight h3 {
+  color: var(--basic-white);
+}
+
+.item-highlight p {
+  color: var(--basic-white);
+}
+
+.list-shady {
+  background-color: var(--basic-light-grey);
+}
+
+.hotel-search {
+  line-height: 24px;
+}
+
+.hotel-search h3{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.button {
+  font: inherit;
+  font-weight: 700;
+  /* text-align: center; */
+  /* vertical-align: middle; */
+  /* text-transform: uppercase; */
+  color: var(--basic-white);
+  border: none;
+}
+
+.button-initialization {
+  background-color: var(--basic-brown);
+}
+
+.button-initialization:hover,
+.button--book:hover {
+  background-color: var(--special-brown-hover);
+} 
+
+.button-initialization:active,
+.button--book:active {
+  background-color: var(--special-brown-active);
+  color: var(--special-white-transparent);
+} 
+
+.page-footer {
+  line-height: 26px;
+}
+
+.page-footer h2, a {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--basic-black-true);
+}
+
+.page-footer__list {
+  list-style: none;
+}
+
+.button-social:hover,
+.modal-form__button-search:hover {
+  background-color: var(--special-blue-hover);
+} 
+
+.button-social:active,
+.modal-form__button-search:active {
+  background-color: var(--special-blue-active);
+  color: var(--special-white-transparent);
+} 
+
+.cite-design:hover path {
+  fill: var(--basic-cloudy-blue);
+}
+
+.cite-design:active path {
+  fill: var(--special-black-transparent);
+}
+
+.modal-form {
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.apartment__list {
+  list-style: none;
+}
+
+.apartment__item input {
+  font: inherit;
+  background-color: var(--basic-grey);
+  border: none;
+}
+
+.apartment__item-date:hover {
+  background-color: var(--special-grey-hover);
+}
+
+.apartment__item-date:focus {
+  outline: none;
+  background-color: var(--basic-white);
+  box-shadow: inset 0 0 0 2px var(--special-grey-border);
+}
+
+.count-participants__input {
+  text-align: center;
+}
+
+.modal-form__button-search {
+  background-color: var(--basic-cloudy-blue);
+}
