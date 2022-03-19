@@ -221,7 +221,7 @@ img {
   list-style: none;
 }
 
-.apartment__item input {
+.apartment__item-date {
   font: inherit;
   background-color: var(--basic-grey);
   border: none;
@@ -275,14 +275,15 @@ img {
 .apartment-available b{
   font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
 }
 
-.apartments-sorting__list,
 .apartments-result__list {
   list-style: none;
 }
 
 .apartments-sorting__list {
+  list-style: none;
   font-size: 12px;
   line-height: 18px;
 }
@@ -292,13 +293,6 @@ img {
   border-style: none none dotted none;
   border-color: var(--basic-cloudy-blue);
   border-width: 1px;
-}
-
-.sorting-selected a {
-  color: var(--basic-cloudy-blue);
-  border-width: none;
-  border-style: none;
-  border-color: none;
 }
 
 .sorting-selected a:not(.pyramid__arrow) {
