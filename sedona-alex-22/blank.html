@@ -11,6 +11,7 @@
     <link rel ="stylesheet" href="css/style.css">
   </head>
   <body>
+
     <header class="page-header">
       <a class="header-logo">
         <img src="img/content/logo.svg" width="138" height="70" alt="Booking server Sedona."> 
@@ -33,79 +34,13 @@
       </nav>
     </header>
 
-    <main class="page-main">
-      <h1 class="visually-hidden">Booking server Sedona</h1>
-      <section class="about">
-        <div class="about__welcome">
-          <img src="img/content/welcome.svg" width="457" height="351" alt="Welcome.">
-        </div>
-        <h2 class="about__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </section>
-      <section class="advantages">
-        <h2 class="visually-hidden">Reasons why to visit Sedona</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item item-highlight">
-            <h3>Настоящий городок</h3>
-            <p>— №1 —</p>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="img/content/real-town.jpg" width="800" height="256" alt="building with mountains on the background.">
-          </li>
-        </ul>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-          <li class="advantages__item">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="advantages__item">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
-          </li>
-        </ul>
-        <ul class="advantages__list">
-          <li class="advantages__item item-highlight">
-            <h3>Там есть Мост дьявола</h3>
-            <img src="img/content/evil-bridge.jpg" width="800" height="256" alt="Rocks in a shape of bridge.">
-            <p>— №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </li>
-        </ul>
-        <ul class="advantages__list list-shady">
-          <li class="advantages__item">
-            <h3>Небольшая площадь</h3>
-            <p>— №3 —</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="advantages__item">
-            <h3>Красивая дорога</h3>
-            <p>— №4 —</p>
-            <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
-          </li>
-          <li class="advantages__item">
-            <h3>Мало туристов</h3>
-            <p>— №5 —</p>
-            <p>Большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ul>
-      </section>
-      <section class="hotel-search">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <a class="button hotel-search__button-initialization" href="javascript:undefined">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
-      </section>
-      <div class="map">
-        <h2 class="visually-hidden">Map</h2>
-        <img src="img/content/map.png" width="1199" height="594" alt="location of Cedona on the map.">
-      </div>
+    <main>
+
     </main>
 
     <footer class="page-footer">
       <h2>#visitSEDONA</h2>
-      <a href="tel:+74956611111">ТЕЛ: +7(495) 661-11-11</a>
+      <a class="page-footer__phone" href="tel:+74956611111">ТЕЛ: +7(495) 661-11-11</a>
       <section class="page-footer__social">
         <h2 class="visually-hidden">Social platforms</h2>
         <ul class="page-footer__list">
@@ -133,35 +68,6 @@
       </p>
     </footer>
 
-      <section class="modal-form">
-        <h2 class="visually-hidden">Check available appartments</h2>
-        <form class="modal-form apartment" action="https://echo.htmlacademy.ru" method="get">
-          <p class="apartment__item">
-            <label class="apartment__item-date" for="checkin-date">Дата заезда:</label>
-            <input class="apartment__item-date calendar-icon" type="text" name="checkin" id="checkin-date" placeholder="24 апреля 2017">  
-          </p>
-          <p class="apartment__item">
-            <label class="apartment__item-date" for="checkout-date">Дата выезда:</label>
-            <input class="apartment__item-date calendar-icon" type="text" name="checkout" id="checkout-date" placeholder="4 июля 2017">
-          </p>
-          <ul  class="apartment__list">
-            <li class="apartment__item count-participants">
-              <label class="count-participants__labele" for="adult-number">Взрослые:</label>
-              <span class="apartment__button button-transperent">-</span>
-              <input class="count-participants__input" type="text" name="adult-number" id="adult-number" value="2">
-              <span class="apartment__button button-transperent">+</span>
-            </li>
-            <li class="apartment__item count-participants">
-              <label class="count-participants__labele" for="children-number ">Дети:</label>
-              <span class="apartment__button button-transperent">-</span>
-              <input class="count-participants__input" type="text" name="children-number" id="children-number" value="0">
-              <span class="apartment__button button-transperent">+</span>
-            </li>
-          </ul>
-          <button class="modal-form__button-search button" type="submit">Найти</button>
-        </form>
-      </section>
-
   </body>
-  
+
 </html>
