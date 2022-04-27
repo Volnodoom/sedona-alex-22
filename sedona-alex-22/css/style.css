@@ -281,6 +281,10 @@ advantages__item__description-wrapper {
 
 .page-footer {
   line-height: 26px;
+  
+}
+
+.page-footer-container {
   display: grid;
   grid-template-columns: 400px 400px 400px;
   margin: 0 auto;
@@ -417,18 +421,19 @@ advantages__item__description-wrapper {
   margin: 0 73px;
 }
 
-.result__item-wrapper {
+.item-cotalog-container {
   display: grid;
   grid-template-columns: 136px 25px 764px 127px;
+  grid-template-rows: 90px;
   grid-template-areas: 'apart-pic . apart-details apart-rating';
   margin: 0 auto 30px auto;
 }
 
-.result__item-wrapper:last-child {
+.item-cotalog-container:last-child {
   margin-bottom: 0;
 }
 
-.result__item-wrapper apartments-result__link {
+.item-cotalog-container.apartments-result__link {
   grid-area: apart-pic;
 }
 
@@ -436,7 +441,6 @@ advantages__item__description-wrapper {
   grid-area: apart-details;
   display: grid;
   grid-template-columns: 110px 5px 142px auto;
-  /* grid-template-rows: repeat(3, 1fr); */
   grid-template-areas: 
   'result-link result-link result-link result-link '
   'result-type .           result-price .          '
@@ -450,13 +454,13 @@ advantages__item__description-wrapper {
 
 .description-result__hostel-type {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
   grid-area: result-type;
 }
 
 .description-result__price-range {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
   grid-area: result-price;
 }
 
@@ -472,6 +476,15 @@ advantages__item__description-wrapper {
 
 .apartments-result__rating-wrapper {
   grid-area: apart-rating;
+}
+
+.apartments-result__rating-wrapper {
+  display: grid;
+  grid-template-rows: 33px 36px 1fr;
+}
+
+.apartments-result__value {
+  grid-row: 3/4;
 }
 
 .apartments-sorting__list {
