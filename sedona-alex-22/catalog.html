@@ -35,7 +35,7 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-container">
       <h1 class="visually-hidden">Apartments in Sedona</h1>
       <section class="apartment-filter">
         <h2 class="visually-hidden">Apartment`s filter</h2>
@@ -86,6 +86,7 @@
               </li>
             </ul>
           </fieldset>
+          <div class="price-adjustment-wrapper">
           <fieldset class="filter-form__group column-filter price-adjustment">
             <legend class="column-filter__title">Стоимость в сутки &#40;&#8381;&#41; &#58;</legend>
             <p class="column-filter__item">
@@ -110,10 +111,10 @@
             </p>
           </fieldset>
           <button  class="button filter-results" type="submit">Показать</button>
+          </div>
         </form>
       </section>
-      <section class="apartment-available apartments">
-        <h2 class="visually-hidden">Apartments</h2>
+      <section class="apartments-soring apartments-wrapper">
         <b>Найдено: 
           <span>3</span>
         </b>
@@ -131,54 +132,64 @@
           <a href="javascript:undefined">По рейтингу</a>
           </li>
           <li class="apartments-sorting__item">
-          <a href="javascript:undefined" class="pyramid__arrow small-to-big">
+            <a href="javascript:undefined" class="pyramid__arrow small-to-big">
             in ascending order
-          </a>
-        </li>
-        <li class="apartments-sorting__item">
-          <a href="javascript:undefined" class="pyramid__arrow big-to-small">
+            </a>
+          </li>
+          <li class="apartments-sorting__item">
+            <a href="javascript:undefined" class="pyramid__arrow big-to-small">
             in descending order
-          </a>
-        </li>
-      </ul>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="apartments-result">
+      <h2 class="visually-hidden">Apartments</h2>
       <ul class="apartments-result__list">
-        <li class="apartments-result__item apartments-result">
+        <li class="apartments-result__item item-cotalog-container">
           <a class="apartments-result__link" href="blank.html">
-            <h2>Amara Resort & Spa</h2>
             <img src="img/content/hotel-amara-resort.jpg" width="135" height="90" alt="house in trees.">
           </a>
 
-          <div class="apartments-result__columns">
-            <p>Гостиница</p>
+          <div class="description-result-wrapper">
+            <a class="description-result__link" href="blank.html">
+              <h2>Amara Resort & Spa</h2>
+            </a>
+            <p class="description-result__hostel-type">Гостиница</p>
             <button class="apartments-result__button apartments-result__button--more-info button" type="button">Подробнее</button>
 
-            <p>от 4000 &#8381;</p>
+            <p class="description-result__price-range">от 4000 &#8381;</p>
             <a class="apartments-result__button apartments-result__button--book button" href="blank.html">Забронировать</a>
           </div>
 
-          <div class="apartments-result__rating rating">
-            <div class="apartments-result__stars rating__stars">
-              <span style="width: 80%"></span>
-              <span class="visually-hidden">Rating</span>
+          <div class="apartments-result__rating-wrapper">
+            <div class="apartments-result__rating rating">
+              <div class="apartments-result__stars rating__stars">
+                <span style="width: 80%"></span>
+                <span>Rating</span>
+              </div>
             </div>
+            <span class="apartments-result__value rating__valuer">Рейтинг: 8,5</span>
           </div>
-          <span class="apartments-result__value rating__valuer">Рейтинг: 8,5</span>
         </li>
 
-        <li class="catalog-result-item">
+        <li class="apartments-result__item item-cotalog-container">
           <a class="apartments-result__link" href="blank.html">
-            <h2>Desert Quail Inn</h2>
             <img src="img/content/hotel-desert-quail.jpg" width="135" height="90" alt="motel near road.">
           </a>
 
-          <div class="apartments-result__columns">
-            <p>Мотель</p>
+          <div class="description-result-wrapper">
+            <a class="description-result__link" href="blank.html">
+              <h2>Desert Quail Inn</h2>
+            </a>
+            <p class="description-result__hostel-type">Мотель</p>
             <button class="apartments-result__button apartments-result__button--more-info button" type="button">Подробнее</button>
   
-            <p>от 3000 &#8381;</p>
+            <p class="description-result__price-range">от 3000 &#8381;</p>
             <a class="apartments-result__button apartments-result__button--book button" href="blank.html">Забронировать</a>
           </div>
   
+          <div class="apartments-result__rating-wrapper">
             <div class="apartments-result__rating rating">
               <div class="apartments-result__stars rating__stars">
                 <span style="width: 80%"></span>
@@ -186,39 +197,46 @@
               </div>
             </div>
             <span class="apartments-result__value rating__valuer">Рейтинг: 8,9</span>
+          </div>
         </li>
 
-        <li class="catalog-result-item">
+        <li class="apartments-result__item item-cotalog-container">
           <a class="apartments-result__link" href="blank.html">
-            <h2>Villas at Poco Diablo</h2>
             <img src="img/content/hotel-villas-poco.jpg" width="135" height="90" alt="apartment in a forest.">
           </a>
 
-          <div class="apartments-result__columns">
-            <p>Апартаменты</p>
+          <div class="description-result-wrapper">
+            <a class="description-result__link" href="blank.html">
+              <h2>Villas at Poco Diablo</h2>
+            </a>
+            <p class="description-result__hostel-type">Апартаменты</p>
             <button class="apartments-result__button apartments-result__button--more-info button" type="button">Подробнее</button>
   
-            <p>от 2000 &#8381;</p>
+            <p class="description-result__price-range">от 2000 &#8381;</p>
             <a class="apartments-result__button apartments-result__button--book button" href="blank.html">Забронировать</a>
             </div>
   
-            <div class="apartments-result__rating rating">
-              <div class="apartments-result__stars rating__stars">
-                <span style="width: 80%"></span>
-                <span class="visually-hidden">Rating</span>
+            <div class="apartments-result__rating-wrapper">
+              <div class="apartments-result__rating rating">
+                <div class="apartments-result__stars rating__stars">
+                  <span style="width: 80%"></span>
+                  <span class="visually-hidden">Rating</span>
+                </div>
               </div>
+              <span class="apartments-result__value rating__valuer">Рейтинг: 9,2</span>
             </div>
-            <span class="apartments-result__value rating__valuer">Рейтинг: 9,2</span>
         </li>
       </ul>
     </section>
     </main>
 
-    <footer class="page-footer">
-      <h2>#visitSEDONA</h2>
-      <a class="page-footer__phone" href="tel:+74956611111">ТЕЛ: +7(495) 661-11-11</a>
+    <footer class="page-footer  page-footer-container">
+      <div class="page-footer__phone-container">
+        <h2>#visitSEDONA</h2>
+        <a class="page-footer__phone" href="tel:+74956611111">ТЕЛ: +7(495) 661-11-11</a>
+      </div>
       <section class="page-footer__social">
-        <h2 class="visually-hidden">Social platforms</h2>
+        <h2>Social platforms</h2>
         <ul class="page-footer__list">
           <li>
             <a class="button-social twitter" href="blank.html">
