@@ -95,8 +95,8 @@
         </ul>
       </section>
       <section class="hotel-search">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <h2 class="hotel-search__title title title--unique">Заинтересовались?</h2>
+        <p class="hotel-search__content">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a class="button hotel-search__button-initialization" href="javascript:undefined">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
       <div class="map">
@@ -106,7 +106,7 @@
     </main>
 
     <footer class="page-footer page-footer-container">
-      <div class="page-footer__phone-container">
+      <div class="page-footer__phone-wrapper">
         <h2>#visitSEDONA</h2>
         <a href="tel:+74956611111">ТЕЛ: +7(495) 661-11-11</a>
       </div>
@@ -137,34 +137,30 @@
       </p>
     </footer>
 
-      <!-- <section class="modal-form">
+      <section class="modal-search-container modal-search">
         <h2 class="visually-hidden">Check available appartments</h2>
-        <form class="modal-form apartment" action="https://echo.htmlacademy.ru" method="get">
-          <p class="apartment__item">
-            <label class="apartment__item-date" for="checkin-date">Дата заезда:</label>
-            <input class="apartment__item-date calendar-icon" type="text" name="checkin" id="checkin-date" placeholder="24 апреля 2017">  
-          </p>
-          <p class="apartment__item">
-            <label class="apartment__item-date" for="checkout-date">Дата выезда:</label>
-            <input class="apartment__item-date calendar-icon" type="text" name="checkout" id="checkout-date" placeholder="4 июля 2017">
-          </p>
+        <form class="modal-search-form apartment" action="https://echo.htmlacademy.ru" method="get">
+            <label for="checkin-date">Дата заезда:</label>
+            <input class="apartment__input calendar-icon" type="text" name="checkin" id="checkin-date" placeholder="24 апреля 2017">  
+            <label for="checkout-date">Дата выезда:</label>
+            <input class="apartment__input calendar-icon" type="text" name="checkout" id="checkout-date" placeholder="4 июля 2017">
           <ul  class="apartment__list">
-            <li class="apartment__item count-participants">
-              <label class="count-participants__labele" for="adult-number">Взрослые:</label>
-              <span class="apartment__button button-transperent">-</span>
-              <input class="count-participants__input" type="text" name="adult-number" id="adult-number" value="2">
-              <span class="apartment__button button-transperent">+</span>
+            <li class="apartment__item-number count-participants">
+              <label class="count-participants__adult" for="adult-number">Взрослые:</label>
+              <button class="button apartment__button button-transperent" type="button">-</button>
+              <input class="apartment__input" type="text" name="adult-number" id="adult-number" value="2">
+              <button class="button apartment__button button-transperent" type="button">+</button>
             </li>
-            <li class="apartment__item count-participants">
-              <label class="count-participants__labele" for="children-number ">Дети:</label>
-              <span class="apartment__button button-transperent">-</span>
-              <input class="count-participants__input" type="text" name="children-number" id="children-number" value="0">
-              <span class="apartment__button button-transperent">+</span>
+            <li class="apartment__item-number count-participants">
+              <label class="count-participants__children" for="children-number ">Дети:</label>
+              <button class="button apartment__button button-transperent" type="button">-</button>
+              <input class="apartment__input" type="text" name="children-number" id="children-number" value="0">
+              <button class="button apartment__button button-transperent" type="button">+</button>
             </li>
           </ul>
-          <button class="button modal-form__button-search" type="submit">Найти</button>
+          <button class="button modal-search-form__button" type="submit">Найти</button>
         </form>
-      </section> -->
+      </section>
 
   </body>
   
