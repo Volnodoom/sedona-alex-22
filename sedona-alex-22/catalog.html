@@ -40,113 +40,105 @@
       <section class="apartment-filter">
         <h2 class="visually-hidden">Apartment`s filter</h2>
         <form class="apartment-filter__form filter-form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="filter-form__group column-filter">
-            <legend class="column-filter__title">Инфраструктура:</legend>
-            <ul class="column-filter__list">
-              <li class="column-filter__item">
-                <label  class="column-filter__text">
-                  <input type="checkbox" name="infrastructure-swimming-pool" checked>
+          <fieldset class="filter-form-group filter-infrastructure">
+            <legend class="filter-form-group__title title title--form">Инфраструктура:</legend>
+            <ul class="filter-form-group__list">
+              <li class="form-checkbox filter-form-group__item">
+                <label  class="xxx">
+                  <input type="checkbox" name="swimming-pool" checked>
                   Бассейн
                 </label>
               </li>
-              <li class="column-filter__item">
-                <label class="column-filter__text">
-                  <input type="checkbox" name="infrastructure-parking-lot">
+              <li class="form-checkbox filter-form-group__item">
+                <label class="xxx">
+                  <input type="checkbox" name="parking-lot">
                   Парковка
                 </label>
               </li>
-              <li class="column-filter__item">
-                <label class="column-filter__text">
-                  <input type="checkbox" name="infrastructure-wi-fi" disabled>
+              <li class="form-checkbox filter-form-group__item">
+                <label class="xxx">
+                  <input type="checkbox" name="wi-fi" disabled>
                   Wi-Fi
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-form__group column-filter">
-            <legend class="column-filter__title">Тип жилья:</legend>
-            <ul class="column-filter__list">
-              <li class="column-filter__item">
-                <label class="column-filter__text">
-                  <input type="checkbox" name="infrastructure-hotel" checked>
+          <fieldset class="filter-form-group filter-residence">
+            <legend class="filter-form-group__title title title--form">Тип жилья:</legend>
+            <ul class="filter-form-group__list">
+              <li class="form-checkbox filter-form-group__item">
+                <label class="xxx">
+                  <input type="checkbox" name="hotel" checked>
                   Гостиница
                 </label>
               </li>
-              <li class="column-filter__item">
-                <label class="column-filter__text">
-                  <input type="checkbox" name="infrastructure-motel">
+              <li class="form-checkbox filter-form-group__item">
+                <label class="xxx">
+                  <input type="checkbox" name="motel">
                   Мотель
                 </label>
               </li>
-              <li class="column-filter__item">
-                <label class="column-filter__text">
-                  <input type="checkbox" name="infrastructure-apartment">
+              <li class="form-checkbox filter-form-group__item">
+                <label class="xxx">
+                  <input type="checkbox" name="apartment">
                   Апартаменты
                 </label>
               </li>
             </ul>
           </fieldset>
-          <div class="price-adjustment-wrapper">
-          <fieldset class="filter-form__group column-filter price-adjustment">
-            <legend class="column-filter__title">Стоимость в сутки &#40;&#8381;&#41; &#58;</legend>
-            <p class="column-filter__item">
-              <label class="column-filter__text">
+          <div class="price-adjustment-container">
+          <fieldset class="filter-form-group price-adjustment">
+            <legend class="filter-form-group__title title title--form">Стоимость в сутки &#40;&#8381;&#41; &#58;</legend>
+            <p class="">
+              <label class="xxx">
                 От 
                 <input type="number" name="min-price" value="0">
               </label>
-              <label class="column-filter__text">
+              <label class="xxx">
                 До 
                 <input type="number" name="max-price" value="3000">
               </label>
             </p>
             <p>
-              <label class="column-filter__text">
+              <label class="xxx">
                 Min price:
                 <input type="range" name="min-price" min="0" max="2900" step="100">
               </label>
-              <label class="column-filter__text">
+              <label class="xxx">
                 Max price:
                 <input type="range" name="max-price" min="100" max="3000" step="100">
               </label>
             </p>
           </fieldset>
-          <button  class="button filter-results" type="submit">Показать</button>
+          <button  class="button filter-results-button" type="submit">Показать</button>
           </div>
         </form>
       </section>
-      <section class="apartments-soring apartments-wrapper">
-        <b>Найдено: 
+    
+      <section class="apartments-sorting sorting-container">
+        <h2 class="title title--sorting apartments-sorting-result">Найдено: 
           <span>3</span>
-        </b>
-        <ul class="apartments-sorting__list">
-          <li class="apartments-sorting__item">
-            <p>Сортировка:</p>
-          </li>
-          <li class="apartments-sorting__item sorting-selected">
-            <a href="javascript:undefined">По цене</a>
-          </li>
-          <li class="apartments-sorting__item">
-          <a href="javascript:undefined">По типу</a>
-          </li>
-          <li class="apartments-sorting__item">
-          <a href="javascript:undefined">По рейтингу</a>
-          </li>
-          <li class="apartments-sorting__item">
-            <a href="javascript:undefined" class="pyramid__arrow small-to-big">
-            in ascending order
-            </a>
-          </li>
-          <li class="apartments-sorting__item">
-            <a href="javascript:undefined" class="pyramid__arrow big-to-small">
-            in descending order
-            </a>
-          </li>
-        </ul>
+        </h2>
+        <h2 class="apartments-sorting__title sorting-text">Сортировка:</h2> 
+        <div class="apartments-sorting__type sorting-text">
+          <button class="apartments-sorting__type-button sorting-selected button" type="button">По цене</button>
+          <button class="apartments-sorting__type-button button" type="button">По типу</button>
+          <button class="apartments-sorting__type-button button" type="button">По рейтингу</button>
+        </div>
+        <div class="apartments-sorting__order">
+          <button  class="apartments-sorting__order-button button pyramid__arrow small-to-big" type="button">
+          in ascending order
+          </button>
+          <button class="apartments-sorting__order-button button pyramid__arrow big-to-small sorting-selected" type="button">
+          in descending order
+          </button>
+        </div>
       </section>
+
       <section class="apartments-result">
       <h2 class="visually-hidden">Apartments</h2>
       <ul class="apartments-result__list">
-        <li class="apartments-result__item item-cotalog-container">
+        <li class="apartments-result__item item-catalog-container">
           <a class="apartments-result__link" href="blank.html">
             <img src="img/content/hotel-amara-resort.jpg" width="135" height="90" alt="house in trees.">
           </a>
@@ -173,7 +165,7 @@
           </div>
         </li>
 
-        <li class="apartments-result__item item-cotalog-container">
+        <li class="apartments-result__item item-catalog-container">
           <a class="apartments-result__link" href="blank.html">
             <img src="img/content/hotel-desert-quail.jpg" width="135" height="90" alt="motel near road.">
           </a>
@@ -200,7 +192,7 @@
           </div>
         </li>
 
-        <li class="apartments-result__item item-cotalog-container">
+        <li class="apartments-result__item item-catalog-container">
           <a class="apartments-result__link" href="blank.html">
             <img src="img/content/hotel-villas-poco.jpg" width="135" height="90" alt="apartment in a forest.">
           </a>
