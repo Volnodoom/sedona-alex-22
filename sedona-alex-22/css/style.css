@@ -110,8 +110,6 @@ html {
 .page-container {
   width: 1200px;
   margin: 0 auto;
-  padding-left: 70px;
-  padding-right: 70px;
 }
 
 .welcome__post img{
@@ -468,6 +466,7 @@ advantages__item__description-wrapper {
 .apartment-filter__form {
   display: flex;
   margin-bottom: 30px;
+  padding: 0 70px;
 }
 
 .filter-form {
@@ -529,6 +528,7 @@ advantages__item__description-wrapper {
   flex-wrap: wrap;
   align-items: flex-start;
   margin-bottom: 30px;
+  padding: 0 70px;
 }
 
 .apartments-sorting-result {
@@ -649,10 +649,6 @@ advantages__item__description-wrapper {
 
 /* Catalog card results */
 
-.apartments-result {
-  margin-bottom: 23px;
-}
-
 .apartments-result__list {
   list-style: none;
   padding: 0;
@@ -663,7 +659,15 @@ advantages__item__description-wrapper {
 .item-catalog-container {
   list-style: none;
   display: flex;
-  margin: 30px auto;
+  padding: 30px 70px;
+}
+
+.apartments-result__list .apartments-result__item {
+  border-top: 1px solid var(--special-grey-border);
+}
+
+.apartments-result__list .apartments-result__item:last-child {
+  border-bottom: 1px solid var(--special-grey-border);
 }
 
 .apartments-result__link {
@@ -679,7 +683,6 @@ advantages__item__description-wrapper {
 .apartments-result__description {
   display: grid;
   grid-template-columns: 110px 142px auto;
-  /* grid-template-rows: 25px 25px 25px; */
   grid-template-areas: 
   'result-link result-link result-link '
   'result-type result-price .          '
@@ -738,7 +741,6 @@ advantages__item__description-wrapper {
 }
 
 .description-result__link h2{
-  line-height: 26px;
   color: var(--basic-black-true);
   margin: 0;
 }
@@ -748,7 +750,6 @@ advantages__item__description-wrapper {
 }
 
 .description-result__link h2:active{
-  line-height: 26px;
   color: var(--special-black-transparent);
 }
 
