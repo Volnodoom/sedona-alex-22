@@ -203,7 +203,7 @@ html {
 
 /* Main section 1 */
 .welcome {
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .welcome__post {
@@ -243,6 +243,12 @@ html {
   padding: 0;
 }
 
+.advantages h3 {
+  display: inline-flex;
+  width: 150px;
+  align-self: center;
+}
+
 .advantages-slogan-container {
   display: flex;
   flex-direction: column;
@@ -250,8 +256,8 @@ html {
   flex-wrap: wrap;
 
   min-height: 120px;
-  margin-bottom: 40px;
-  padding: 0 10px;
+  margin-bottom: 50px;
+
 }
 
 .advantages-slogan-container p {
@@ -277,8 +283,8 @@ html {
 
 .advantages__item__description-container {
   grid-area: content;
-  padding: 0 10px;
   margin: 0 auto;
+  padding: 0 50px;  
 }
 
 .advantages__item-img {
@@ -298,7 +304,13 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+
+
+  /* gap: 25px; */
+}
+
+.advantages__item--single-block p {
+  padding: 0 50px;  
 }
 
 .advantages__item--highlight {
@@ -350,6 +362,9 @@ html {
   content: '';
   width: 75px;
   height: 70px;
+  margin-bottom: 27px;
+  margin-top: -17px;
+
   background-size: contain;
   background-image: url('/img/decoration/icon-1-hous.svg');
 }
@@ -359,6 +374,9 @@ html {
   content: '';
   width: 75px;
   height: 70px;
+  margin-bottom: 27px;
+  margin-top: -17px;
+
   background-size: contain;
   background-image: url('/img/decoration/icon-3-food.svg');
 }
@@ -369,15 +387,16 @@ html {
   content: '';
   width: 75px;
   height: 70px;
+  margin-bottom: 27px;
+  margin-top: -17px;
+
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url('/img/decoration/icon-2-surprise.svg');
 }
 
-
 .hotel-search {
   margin: 0 auto;
-  height: 291px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -388,21 +407,33 @@ html {
 .hotel-search__title {
   padding-top: 58px;
   margin: 0; 
-  height: 81px;
+  min-height: 81px;
+  margin-bottom: 35px;
+  margin-left: -7px;
+
+  text-align: center;
 }
 
 .hotel-search__content {
-  margin: 0 auto;
-  padding-top: 24px;
-  flex-grow: 1;
+  font-size: 14px;
+  line-height: 24px;
+  
+  margin: 0;
+  display: block;
+  min-height: 80px;
+  margin-bottom: 10px;
+
+
+  overflow: hidden;
 }
 
 .hotel-search__button-initialization {
   font-size: 21px;
   line-height: 26px;
   padding-top: 30px;
-  height: 81px;
+  height: 85px;
   width: 568px;
+  flex-shrink: 0;
 }
 
 .hotel-search__button-initialization,
@@ -444,14 +475,22 @@ html {
 
 .page-footer__phone-container {
   margin: 0;
+  padding: 0;
   min-width: 400px;
   flex-grow: 1;
 }
 
-.page-footer h2 {
+.page-footer__phone-container h2 {
+  margin: -23px -75px 10px 0;
+
   font-size: 21px;
   font-weight: 700;
+
   color: var(--basic-black-true);
+}
+
+.page-footer__phone-container a {
+  margin: 0px -75px 0px 0;
 }
 
 .page-footer a {
@@ -464,15 +503,17 @@ html {
 
 .page-footer__social-container {
   margin: 0;
+  padding: 0;
+
   min-width: 400px;
   flex-grow: 1;
-
 }
 
 .page-footer__list {
   display: flex;
   flex-wrap: wrap;
   width: 150px;
+  /* height: 48px; */
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
@@ -487,6 +528,11 @@ html {
 }
 
 .button-social {
+  padding: 0;
+  margin: 0;
+
+  height: 48px;
+
   background-color: var(--basic-cloudy-blue);
   opacity: 1;
 }
@@ -509,9 +555,21 @@ html {
 }
 
 .page-footer__design-container {
-  margin: 0;
   min-width: 400px;
   flex-grow: 1;
+}
+
+.page-footer__design-container p {
+  display: block;
+  position: relative;
+  margin: -10px 195px 0 0;
+}
+
+.cite-design {
+  position: absolute;
+  display: block;
+  right: -27%;
+  bottom: -45%;
 }
 
 .cite-design:hover path {
@@ -524,9 +582,50 @@ html {
 
 /* Modal window */
 
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+
+  background: rgba(84, 77, 77, 0.65);
+
+  width: 100%;
+  min-height: 100%;
+}
+
+.modal.is-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__overlay {
+  top: 0;
+  left: 0;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  cursor: pointer;
+}
+
 .modal-search-container {
+  position: relative;
+  top:  120px;
+  margin: auto;
+}
+
+.modal-search {
   width: 568px;
-  height: 481px;
+  min-height: 481px;
+
+  background-color: var(--basic-white);
 }
 
 .modal-search__title {
@@ -541,8 +640,8 @@ html {
 .modal-search-form {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 20px 30px;
-  padding: 55px;
+  gap: 25px 20px;
+  padding: 50px 55px 55px 55px;
   align-items: center;
 }
 
@@ -563,7 +662,7 @@ html {
   list-style: none;
   grid-column: 1/3;
   padding: 0;
-  margin: 0;
+  margin: 0 0 28px 0;
   
   display: flex;
   justify-content: space-between;
@@ -571,6 +670,7 @@ html {
 
 .apartment__button {
   min-width: 38px;
+  min-height: 42px;
   position: relative;
   background-color: var(--basic-grey);
 }
@@ -621,6 +721,8 @@ html {
 .apartment__input-visitors {
   background-color: var(--basic-grey);
   border: solid 2px transparent;
+
+  /* min-width: 10px; */
 }
 
 .calender-container {
@@ -644,7 +746,8 @@ html {
 }
 
 .count-participants__adult {
-  margin-right: 50px;
+  margin-right: 40px;
+  align-self: center;
 }
 
 .apartment__item-number .apartment__input {
@@ -653,11 +756,15 @@ html {
 
 .count-participants__children {
   margin-right: 27px;
+  align-self: center;
 }
 
 .modal-search-form__button {
   height: 58px;
   grid-column: 1/3;
+
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .apartment__date-container:hover  {
@@ -704,7 +811,7 @@ html {
 .apartment-filter__form {
   display: flex;
   margin-bottom: 30px;
-  padding: 27px 70px 31px 70px;
+  padding: 27px 70px 0px 70px;
 }
 
 .filter-form {
@@ -743,7 +850,7 @@ html {
 }
 
 .filter-form-group__item {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .filter-form-group__item label{
@@ -915,6 +1022,10 @@ html {
   margin-bottom: 16px;
 }
 
+.filter-price .filter-form-group__title {
+  margin-bottom: 11px;
+}
+
 .filter-results-button {
   font-weight: 400;
   background-color: transparent;
@@ -1082,8 +1193,7 @@ html {
   'result-link result-link result-link '
   'result-type result-price .          '
   'btn-more    btn-book     .          ';
-  gap: 10px 5px;
-  align-items:stretch;
+  gap: 5px 5px;
 
   margin-right: auto;
 }
@@ -1100,17 +1210,24 @@ html {
 
 .description-result__price-range {
   grid-area: result-price;
+  padding: 0;
   margin: 0;
 }
 
 .apartments-result__button--more-info {
   grid-area: btn-more;
   align-self: flex-start;
+  min-width: 110px;
+  min-height: 27px;
 }
 
 .apartments-result__button--book {
   grid-area: btn-book;
   align-self: flex-start;
+  min-width: 142px;
+  min-height: 27px;
+
+  padding-top: 3px;
 }
 
 .apartments-result__rating {
