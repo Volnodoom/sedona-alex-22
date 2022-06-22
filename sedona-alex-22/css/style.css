@@ -811,7 +811,7 @@ html {
 .apartment-filter__form {
   display: flex;
   margin-bottom: 30px;
-  padding: 27px 70px 0px 70px;
+  padding: 25px 70px 10px 70px;
 }
 
 .filter-form {
@@ -1036,7 +1036,7 @@ html {
   height: 36px;
   align-self: center;
 
-  cursor: pointer;
+  margin: -4px 13px 0 0;
 }
 
 .filter-results-button:hover {
@@ -1056,12 +1056,12 @@ html {
 
 .apartments-sorting-result {
   min-width: 135px;
-  margin: 0;
+  margin: 0 0 0 4px;
   margin-right: 25px;
 }
 
 .apartments-sorting__title {
-  margin: 0;
+  margin: 0 0 0 0;
   margin-right: 40px;
 }
 
@@ -1077,11 +1077,13 @@ html {
 }
 
 .apartments-sorting__type-button {
-  margin-right: 20px;
+  font: inherit;
+  margin-right: 32px;
   background: none;
 }
 
 .apartments-sorting__order {
+  margin: 3px 3px 0 0;
   margin-left: auto;
   display: flex;
 }
@@ -1159,13 +1161,13 @@ html {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 2px;
 }
 
 .item-catalog-container {
   list-style: none;
   display: flex;
-  padding: 30px 70px;
+  padding: 30px 70px 25px 70px;
 }
 
 .apartments-result__list .apartments-result__item {
@@ -1177,7 +1179,7 @@ html {
 }
 
 .apartments-result__link {
-  margin-right: 25px;
+  margin-right: 32px;
   min-width: 135px;
 }
 
@@ -1205,13 +1207,13 @@ html {
 
 .description-result__hostel-type {
   grid-area: result-type;
-  margin: 0;
+  margin: -5px 0 0 0;
 }
 
 .description-result__price-range {
   grid-area: result-price;
   padding: 0;
-  margin: 0;
+  margin: -5px 0 0 0;
 }
 
 .apartments-result__button--more-info {
