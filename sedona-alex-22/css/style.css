@@ -173,12 +173,14 @@ html {
 
 .navigation__item {
   display: block;
-  min-width: 240px;
+  width: 240px;
 
   text-align: center;
 }
 
-.navigation__item:nth-child(2) {
+.navigation__item:nth-child(2),
+.navigation__item:nth-child(6),
+.navigation__item:nth-child(10) {
   margin-right: 240px;
 }
 
@@ -260,8 +262,13 @@ html {
 
 }
 
+.advantages-slogan-container h2 {
+  padding: 0 50px 0 50px;
+}
+
 .advantages-slogan-container p {
   line-height: 26px;
+  padding: 0 50px 0 50px;
 }
 
 .advantages__list-container {
@@ -405,6 +412,7 @@ html {
 }
 
 .hotel-search__title {
+  padding: 0 50px 0 50px;
   padding-top: 58px;
   margin: 0; 
   min-height: 81px;
@@ -417,6 +425,8 @@ html {
 .hotel-search__content {
   font-size: 14px;
   line-height: 24px;
+
+  padding: 0 50px 0 50px;
   
   margin: 0;
   display: block;
@@ -430,8 +440,8 @@ html {
 .hotel-search__button-initialization {
   font-size: 21px;
   line-height: 26px;
-  padding-top: 30px;
-  height: 85px;
+  padding: 30px 0 30px 0;
+  min-height: 85px;
   width: 568px;
   flex-shrink: 0;
 }
@@ -513,7 +523,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   width: 150px;
-  /* height: 48px; */
+
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
@@ -832,7 +842,7 @@ html {
 
 .filter-infrastructure,
 .filter-residence {
-  margin-right: 120px;
+  margin-right: 30px;
 }
 
 .filter-form-group__title {
@@ -856,6 +866,9 @@ html {
 .filter-form-group__item label{
   display: flex;
   align-items: center;
+
+  width: 228px;
+
   cursor: pointer;
 }
 
@@ -1033,7 +1046,7 @@ html {
   border-radius: 2px;
 
   width: 137px;
-  height: 36px;
+  min-height: 36px;
   align-self: center;
 
   margin: -4px 13px 0 0;
@@ -1068,6 +1081,7 @@ html {
 .apartments-sorting__type {
   display: flex;
   flex-wrap: wrap;
+  width: 700px;
 }
 
 .sorting-text {
@@ -1246,7 +1260,6 @@ html {
 }
 
 .rating-result__number {
-  white-space: nowrap;
   padding: 3px 15px;
   margin-bottom: 5px;
 }
