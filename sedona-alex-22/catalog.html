@@ -8,10 +8,11 @@
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel ="stylesheet" href="css/normalize.css">
-    <link rel ="stylesheet" href="css/style.css">
+    <link rel ="stylesheet" href="css/style.min.css">
   </head>
 
   <body>
+    <div class="page">
     <div class="visually-hidden">
       <svg width="19" height="17"  fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <symbol id="rating-star" viewBox="0 0 19 17"><path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
@@ -20,7 +21,7 @@
     </div>
 
     <header class="page-header page-header-container">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="/">
         <img class="page-header__logo-img" src="img/content/logo.svg" width="138" height="70" alt="Booking server Sedona."> 
       </a>
       <nav class="navigation">
@@ -35,7 +36,7 @@
             <a class="navigation__link" href="blank.html">Карта Штата</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Гостиницы</a>
+            <a class="navigation__link current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -243,7 +244,7 @@
         <a href="tel:+74956611111">ТЕЛ: +7(495) 661-11-11</a>
       </div>
       <section class="page-footer__social-container">
-        <h2 class="visually-hidden"e>Social platforms</h2>
+        <h2 class="visually-hidden">Social platforms</h2>
         <ul class="page-footer__list">
           <li class="page-footer__item">
             <a class="button-social" href="blank.html">
@@ -281,5 +282,7 @@
         </p>
       </div>
     </footer>
+
+    </div>
   </body>
 </html>

@@ -8,10 +8,11 @@
     <link rel="apple-touch-icon" href="img/favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel ="stylesheet" href="css/normalize.css">
-    <link rel ="stylesheet" href="css/style.css">
+    <link rel ="stylesheet" href="css/style.min.css">
   </head>
 
   <body>
+    <div class="page">
     <header class="page-header page-header-container">
       <a class="page-header__logo">
         <img class="page-header__logo-img" src="img/content/logo.svg" width="138" height="70" alt="Booking server Sedona."> 
@@ -37,6 +38,7 @@
     <main class="page-main page-main-container">
       <h1 class="visually-hidden">Booking server Sedona</h1>
       <section class="welcome">
+        <h2 class="visually-hidden">Welcome to Sedona</h2>
         <div class="welcome__post">
           <img class="welcome__post-img" src="img/content/welcome.svg" width="457" height="351" alt="Welcome.">
         </div>
@@ -69,7 +71,7 @@
           </li>
           <li class="advantages__item advantages__item--single-block">
             <h3 class="title title--advantages surprise">Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</br>
+            <p>Не только китайского, но и местного производства!</p>
           </li>
 
           <li class="advantages__item advantages__item--highlight advantages__item--right">
@@ -115,7 +117,7 @@
         <a href="tel:+74956611111">ТЕЛ: +7(495) 661-11-11</a>
       </div>
       <section class="page-footer__social-container">
-        <h2 class="visually-hidden"e>Social platforms</h2>
+        <h2 class="visually-hidden">Social platforms</h2>
         <ul class="page-footer__list">
           <li class="page-footer__item">
             <a class="button-social" href="blank.html">
@@ -181,32 +183,24 @@
                   <label class="count-participants__adult" for="adult-number">Взрослые:</label>
                   
                   <button class="button apartment__button" type="button">
-                    <div class="icon-calculate">
-                      <svg width="38" height="28" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="12" height="3" x="13" y="16" fill="#A9A9A9"/></svg>
-                    </div>
+                    <svg class="icon-calculate" width="38" height="28" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="12" height="3" x="13" y="16" fill="#A9A9A9"/></svg>
                   </button>
     
                   <input class="apartment__input apartment__input-visitors" type="text" name="adult-number" id="adult-number" value="2">
                   
                   <button class="button apartment__button button-transperent" type="button">
-                    <div class="icon-calculate">
-                      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/></svg>
-                    </div>
+                    <svg class="icon-calculate" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/></svg>
                   </button>
                 </li>
     
                 <li class="apartment__item-number count-participants">
-                  <label class="count-participants__children" for="children-number ">Дети:</label>
+                  <label class="count-participants__children" for="children-number">Дети:</label>
                   <button class="button apartment__button button-transperent" type="button">
-                    <div class="icon-calculate">
-                      <svg width="38" height="28" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="12" height="3" x="13" y="16" fill="#A9A9A9"/></svg>
-                    </div>
+                    <svg class="icon-calculate" width="38" height="28" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="12" height="3" x="13" y="16" fill="#A9A9A9"/></svg>
                   </button>
                   <input class="apartment__input apartment__input-visitors" type="text" name="children-number" id="children-number" value="0">
                   <button class="button apartment__button button-transperent" type="button">
-                    <div class="icon-calculate">
-                      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/></svg>
-                    </div>
+                    <svg class="icon-calculate" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/></svg>
                   </button>
                 </li>
               </ul>
@@ -216,6 +210,7 @@
         </div>
       </div>
 
+    </div>
   </body>
   
 </html>
