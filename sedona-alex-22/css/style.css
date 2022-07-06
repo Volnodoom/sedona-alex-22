@@ -143,6 +143,12 @@ html {
   cursor: pointer;
 }
 
+input[type="number"] {
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+
 /* Header */
 
 .page-header-container {
@@ -200,6 +206,10 @@ html {
 
 .navigation__link:visited {
   color: var(--basic-black-true);
+}
+
+.navigation__link:focus {
+  outline: solid 2px var(--basic-black);
 }
 
 .navigation__link:hover {
@@ -458,7 +468,7 @@ html {
 .hotel-search__button-initialization {
   font-size: 21px;
   line-height: 26px;
-  padding: 30px 0 30px 0;
+  padding: 30px 15px;
   min-height: 85px;
   width: 568px;
   flex-shrink: 0;
@@ -467,6 +477,11 @@ html {
 .hotel-search__button-initialization,
 .apartments-result__button--book {
   background-color: var(--basic-brown);
+}
+
+.apartments-result__button--book:focus,
+.hotel-search__button-initialization:focus {
+  outline: solid 2px var(--basic-black);
 }
 
 .hotel-search__button-initialization:hover,
@@ -529,6 +544,10 @@ html {
   text-align: center;
 }
 
+.page-footer a:focus {
+  outline: solid 2px var(--basic-black);
+}
+
 .page-footer__social-container {
   margin: 0;
   padding: 0;
@@ -565,6 +584,12 @@ html {
   opacity: 1;
 }
 
+.button-social:focus,
+.apartments-result__button--more-info:focus,
+.modal-search-form__button:focus {
+  outline: solid 2px var(--basic-black);
+}
+
 .button-social:hover,
 .modal-search-form__button:hover,
 .apartments-result__button--more-info:hover {
@@ -598,6 +623,10 @@ html {
   display: block;
   right: -27%;
   bottom: -45%;
+}
+
+.cite-design:focus {
+  outline: solid 2px var(--basic-black);
 }
 
 .cite-design:hover path {
@@ -703,6 +732,12 @@ html {
   background-color: var(--basic-grey);
 }
 
+.apartment__button:focus {
+  outline: none;
+  background-color: var(--basic-white);
+  border: solid 2px var(--special-grey-border);
+}
+
 .icon-calculate {
   position: absolute;
 
@@ -715,13 +750,13 @@ html {
 
 .icon-calculate:hover rect,
 .icon-calculate:hover path,
-.calender-container:hover path {
+.calender-button:hover path {
   fill: var(--basic-black-true);
 }
 
 .icon-calculate:active rect,
 .icon-calculate:active path,
-.calender-container:active path {
+.calender-button:active path {
   fill: var(--basic-cloudy-blue);
 }
 
@@ -749,13 +784,16 @@ html {
 .apartment__input-visitors {
   background-color: var(--basic-grey);
   border: solid 2px transparent;
-
-  /* min-width: 10px; */
 }
 
-.calender-container {
+.apartment__input-visitors::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.calender-button {
   padding-top: 7px;
   padding-right: 8px;
+  padding-left: 9px;
 
   background-color: inherit;
 
@@ -807,11 +845,17 @@ html {
   border-bottom: solid 2px var(--special-grey-border);
 }
 
-.apartment__input-date:focus ~ .calender-container {
+.apartment__input-date:focus ~ .calender-button {
   background-color: var(--basic-white);
   border-right: solid 2px var(--special-grey-border);
   border-top: solid 2px var(--special-grey-border);
   border-bottom: solid 2px var(--special-grey-border);
+}
+
+.calender-button:focus {
+  background-color: var(--basic-white);
+  border: solid 2px var(--special-grey-border);
+  outline: none;
 }
 
 .apartment__input-visitors:hover {
@@ -912,7 +956,7 @@ html {
 
 .filter-form-group__item input:focus + label {
   outline-offset: 3px;
-  outline: 2px solid black;
+  outline: 2px solid var(--basic-black);
   border-radius: 5px;
 }
 
@@ -984,8 +1028,12 @@ html {
   width: 75px;
 }
 
+.filter-price__value input:focus {
+  outline: solid 2px var(--basic-cloudy-blue);
+}
+
 .filter-price__value input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: textfield;
   appearance: none;
 }
 
@@ -1033,6 +1081,10 @@ html {
   box-shadow: 0 2px var(--special-dot-slider-opacity30);
 }
 
+.filter-price__toggle:focus {
+  outline: solid 2px var(--basic-cloudy-blue);
+}
+
 .toggle-max {
   left: 0%;
 }
@@ -1068,6 +1120,10 @@ html {
   align-self: center;
 
   margin: -4px 13px 0 0;
+}
+
+.filter-results-button:focus {
+  outline: solid 2px var(--basic-cloudy-blue);
 }
 
 .filter-results-button:hover {
@@ -1162,6 +1218,10 @@ html {
   align-self: start;
 }
 
+.apartments-sorting__type-button:focus {
+  outline: solid 2px var(--basic-black);
+}
+
 .apartments-sorting__type-button:hover {
   color: var(--basic-cloudy-blue);
   border-style: none none dotted none;
@@ -1174,6 +1234,10 @@ html {
   border-width: none;
   border-style: none;
   border-color: none;
+}
+
+.apartments-sorting__order-button:hover::before {
+  outline: solid 2px var(--basic-black);
 }
 
 .apartments-sorting__order-button:hover::before {
@@ -1213,6 +1277,10 @@ html {
 .apartments-result__link {
   margin-right: 32px;
   min-width: 135px;
+}
+
+.apartments-result__link:focus {
+  outline: solid 2px var(--basic-black);
 }
 
 .link-result__img {
@@ -1294,6 +1362,10 @@ html {
 .description-result__link h2{
   color: var(--basic-black-true);
   margin: 0;
+}
+
+.description-result__link:focus {
+  outline: solid 2px var(--basic-black);
 }
 
 .description-result__link h2:hover{
