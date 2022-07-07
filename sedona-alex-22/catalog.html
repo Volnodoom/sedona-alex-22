@@ -88,6 +88,8 @@
           <fieldset class="filter-form-group filter-price">
             <legend class="filter-form-group__title title title--form">Стоимость в сутки &#40;&#8381;&#41; &#58;</legend>
             
+            <!-- <div class="visually-hidden" role="status" aria-live="polite"></div> -->
+
             <div class="filter-price__container-value">
               <div class="filter-price__value">
                 <input type="number" id="min-price" name="min-price" value="0">
@@ -104,10 +106,8 @@
               <div class="filter-price__range">
                 <div class="filter-price__bar" style="margin-left: 30%; width: 40%;"></div>
               </div>
-                <div class="filter-price__toggle toggle-min" aria-labelledby="info-toggle-min" style="left: 30%" tabindex="0"></div>
-                <div class="filter-price__toggle toggle-max" aria-labelledby="info-toggle-max" style="left: 70%" tabindex="0"></div>
-                <p class="visually-hidden" id="info-toggle-min">Используйте клавиши со стрелками для того, чтобы изменить начальную стоимость товара.</p>
-                <p class="visually-hidden" id="info-toggle-max">Используйте клавиши со стрелками для того, чтобы изменить конечную стоимость товара.</p>
+                <div class="filter-price__toggle toggle-min" role="slider" aria-label="Минимальная стоимость отеля" aria-valuenow="0" style="left: 30%" tabindex="0"></div>
+                <div class="filter-price__toggle toggle-max" role="slider" aria-label="Максимальная стоимость отеля" aria-valuenow="3000" style="left: 70%" tabindex="0"></div>
             </div>
           </fieldset>
           <button class="button filter-results-button" type="submit">Показать</button>
@@ -286,5 +286,6 @@
     </footer>
 
     </div>
+    <script src="/js/slider.js"></script>
   </body>
 </html>
